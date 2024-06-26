@@ -1,0 +1,19 @@
+<div class="px-10">
+  <h1 class="text-lg font-bold">About</h1>
+  <p class="text-xs">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. <span highlight>Facere vel delectus
+    numquam aliquid itaque nulla</span>. Alias fugiat est, voluptatem commodi soluta,
+    ad et eveniet odit rem perferendis porro, quidem iste.
+  </p>
+  <p class="text-xs">
+    Numero de clientes
+    <shared-counter
+      [duration]="duration()"
+      [message]="message()"
+      *ngIf="duration() > 0"
+    />
+  </p>
+  <div>
+    <shared-wave-audio audioUrl="assets/audio.mp3" />
+  </div>
+</div>
